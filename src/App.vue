@@ -69,7 +69,7 @@ header {
 .carousel__item {
   max-height: 525px;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
   color: var(--vc-clr-white);
   font-size: 20px;
   /* border-radius: 8px; */
