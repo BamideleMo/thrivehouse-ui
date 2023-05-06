@@ -14,7 +14,7 @@ import Slider from "../components/Slider.vue";
         through:
       </h2>
       <div
-        class="w-11/12 lg:w-4/6 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 my-6"
+        class="w-11/12 lg:w-4/6 mx-auto grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-4 lg:gap-6 my-6"
       >
         <div class="">
           <img src="/leadership.svg" alt="" class="w-14 lg:w-20 mx-auto" />
@@ -79,7 +79,7 @@ import Slider from "../components/Slider.vue";
       </div>
       <div class="w-11/12 lg:w-10/12 mx-auto my-20 lg:my-40 text-white">
         <img src="/shop.png" class="w-full" />
-        <div class="-mt-14 lg:-mt-40 px-4 lg:px-20 flex justify-between">
+        <div class="-mt-10 lg:-mt-40 px-4 lg:px-20 flex justify-between">
           <div
             class="text-base leading-tight lg:text-3xl w-48 lg:w-60 font-extrabold"
           >
@@ -88,11 +88,11 @@ import Slider from "../components/Slider.vue";
           <div class="pt-2 lg:pt-20">
             <RouterLink
               to=""
-              class="flex space-x-1 p-1 lg:px-4 text-xs lg:text-lg"
+              class="flex space-x-1 p-0.5 lg:px-4 text-xs lg:text-lg"
               style="background: #33cc33"
             >
               <span class="">Visit our shop</span>
-              <img src="/arrow-r-w.svg" class="h-5 -mt-0.5 lg:mt-1" />
+              <img src="/arrow-r-w.svg" class="h-3 lg:h-5 -mt-0.5 lg:mt-1" />
             </RouterLink>
           </div>
         </div>
