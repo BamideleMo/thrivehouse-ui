@@ -17,8 +17,10 @@ import Slider from "../components/Slider.vue";
         class="w-11/12 lg:w-4/6 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 my-6"
       >
         <div class="">
-          <img src="/leadership.svg" alt="" class="w-16 lg:w-20 mx-auto" />
-          <div class="uppercase text-lg lg:text-2xl text-green-700 text-center">
+          <img src="/leadership.svg" alt="" class="w-14 lg:w-20 mx-auto" />
+          <div
+            class="uppercase text-base lg:text-2xl text-green-700 text-center"
+          >
             Leadership
           </div>
           <RouterLink
@@ -30,8 +32,10 @@ import Slider from "../components/Slider.vue";
           </RouterLink>
         </div>
         <div class="">
-          <img src="/authorship.svg" alt="" class="w-16 lg:w-20 mx-auto" />
-          <div class="uppercase text-lg lg:text-2xl text-green-700 text-center">
+          <img src="/authorship.svg" alt="" class="w-14 lg:w-20 mx-auto" />
+          <div
+            class="uppercase text-base lg:text-2xl text-green-700 text-center"
+          >
             Authorship
           </div>
           <RouterLink
@@ -43,8 +47,10 @@ import Slider from "../components/Slider.vue";
           </RouterLink>
         </div>
         <div class="">
-          <img src="/relationship.svg" alt="" class="w-16 lg:w-20 mx-auto" />
-          <div class="uppercase text-lg lg:text-2xl text-green-700 text-center">
+          <img src="/relationship.svg" alt="" class="w-14 lg:w-20 mx-auto" />
+          <div
+            class="uppercase text-base lg:text-2xl text-green-700 text-center"
+          >
             Relationship
           </div>
           <RouterLink
@@ -56,8 +62,10 @@ import Slider from "../components/Slider.vue";
           </RouterLink>
         </div>
         <div class="">
-          <img src="/fitnessship.svg" alt="" class="w-16 lg:w-20 mx-auto" />
-          <div class="uppercase text-lg lg:text-2xl text-green-700 text-center">
+          <img src="/fitnessship.svg" alt="" class="w-14 lg:w-20 mx-auto" />
+          <div
+            class="uppercase text-base lg:text-2xl text-green-700 text-center"
+          >
             Fitness-ship
           </div>
           <RouterLink
@@ -73,14 +81,14 @@ import Slider from "../components/Slider.vue";
         <img src="/shop.png" class="w-full" />
         <div class="-mt-14 lg:-mt-40 px-4 lg:px-20 flex justify-between">
           <div
-            class="text-lg leading-tight lg:text-3xl w-48 lg:w-60 font-extrabold"
+            class="text-base leading-tight lg:text-3xl w-48 lg:w-60 font-extrabold"
           >
             Visit our shop to view many other products
           </div>
           <div class="pt-2 lg:pt-20">
             <RouterLink
               to=""
-              class="flex space-x-2 p-2 lg:px-4 text-xs lg:text-lg"
+              class="flex space-x-1 p-1 lg:px-4 text-xs lg:text-lg"
               style="background: #33cc33"
             >
               <span class="">Visit our shop</span>
@@ -98,7 +106,7 @@ import Slider from "../components/Slider.vue";
             class="mt-4 lg:mt-16 grid grid-cols-1 lg:grid-cols-4 gap-2 lg:gap-4 text-center"
           >
             <div class="p-4 lg:border-r border-white lg:p-8">
-              <img src="/repair.svg" class="w-16 lg:w-20 mx-auto" />
+              <img src="/repair.svg" class="w-14 lg:w-20 mx-auto" />
               <h3 class="text-xl font-bold">Repair</h3>
               <div class="mt-1 text-base">
                 We strive to bring fitness to your spirit, soul and body so you
@@ -106,7 +114,7 @@ import Slider from "../components/Slider.vue";
               </div>
             </div>
             <div class="p-4 lg:border-r border-white lg:p-8">
-              <img src="/relove.svg" class="w-16 lg:w-20 mx-auto" />
+              <img src="/relove.svg" class="w-14 lg:w-20 mx-auto" />
               <h3 class="text-xl font-bold">Relove</h3>
               <div class="mt-1 text-base">
                 Damaged personal and mutual relationships can no longer be your
@@ -114,7 +122,7 @@ import Slider from "../components/Slider.vue";
               </div>
             </div>
             <div class="p-4 lg:border-r border-white lg:p-8">
-              <img src="/relead.svg" class="w-16 lg:w-20 mx-auto" />
+              <img src="/relead.svg" class="w-14 lg:w-20 mx-auto" />
               <h3 class="text-xl font-bold">Relead</h3>
               <div class="mt-1 text-base">
                 We have set a pace to train you to lead your personal and
@@ -122,7 +130,7 @@ import Slider from "../components/Slider.vue";
               </div>
             </div>
             <div class="p-8">
-              <img src="/reload.svg" class="w-16 lg:w-20 mx-auto" />
+              <img src="/reload.svg" class="w-14 lg:w-20 mx-auto" />
               <h3 class="text-xl font-bold">Reload</h3>
               <div class="mt-1 text-base">
                 Staying fit (Spirit, soul and body) puts you at that vantage

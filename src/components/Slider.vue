@@ -5,7 +5,7 @@ import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
 <template>
   <Carousel :autoplay="2000" :wrap-around="true">
     <Slide v-for="slide in 4" :key="slide">
-      <div class="carousel__item flex">
+      <div class="carousel__item flex bg-green-200">
         <img :src="`/slide${slide}.png`" alt="" class="w-full" />
         <div v-if="slide === 1" class="hook mt-0 lg:mt-40 text-left font-rale">
           <h2 class="text-lg lg:text-4xl font-extrabold">

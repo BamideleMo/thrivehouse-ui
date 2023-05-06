@@ -7,7 +7,7 @@ const showMenu = ref(false);
 <template>
   <header class="font-rale text-white z-40 w-full h-16 lg:h-20">
     <div class="mx-1 lg:w-11/12 lg:mx-auto flex justify-between">
-      <div class="mt-2">
+      <div class="mt-2 ml-2 lg:ml-0">
         <RouterLink to="/">
           <img src="/logo.png" alt="logo" class="h-10 lg:h-14" />
         </RouterLink>
@@ -44,7 +44,7 @@ const showMenu = ref(false);
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-10 h-10 inline-block cursor-pointer hover:text-green-700"
+          class="w-10 h-10 inline-block cursor-pointer hover:text-green-700 mr-3"
         >
           <path
             stroke-linecap="round"
