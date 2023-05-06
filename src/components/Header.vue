@@ -5,31 +5,6 @@ import MenuItems from "./MenuItems.vue";
 const showMenu = ref(false);
 </script>
 <template>
-  <header class="font-rale text-white z-40 w-full h-16 lg:h-20">
-    <div class="mx-1 lg:w-11/12 lg:mx-auto flex justify-between">
-      <div class="mt-2 ml-2 lg:ml-0">
-        <RouterLink to="/">
-          <img src="/logo.png" alt="logo" class="h-10 lg:h-14" />
-        </RouterLink>
-      </div>
-      <MenuItems class="hidden lg:flex" />
-      <svg
-        @click="() => (showMenu = true)"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="lg:hidden w-10 h-10 mt-2 mr-2 cursor-pointer"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-        />
-      </svg>
-    </div>
-  </header>
   <div
     v-if="showMenu"
     class="bg-black bg-opacity-95 top-0 fixed min-h-screen z-50 w-full flex"
@@ -60,6 +35,35 @@ const showMenu = ref(false);
       <MenuItems />
     </div>
   </div>
+  <header class="font-rale text-white z-40 w-full h-16 lg:h-20">
+    <div class="mx-1 lg:w-11/12 lg:mx-auto flex justify-between">
+      <div class="mt-2 ml-2 lg:ml-0">
+        <RouterLink to="/">
+          <img src="/logo.png" alt="logo" class="h-10 lg:h-14" />
+        </RouterLink>
+      </div>
+      <MenuItems class="hidden lg:flex" />
+      <svg
+        @click="
+          () => {
+            showMenu = true;
+          }
+        "
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="lg:hidden w-10 h-10 mt-2 mr-2 cursor-pointer"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+        />
+      </svg>
+    </div>
+  </header>
 </template>
 
 <style scoped>
