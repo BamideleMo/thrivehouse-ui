@@ -6,7 +6,7 @@ const showMenu = ref(false);
 </script>
 <template>
   <header class="font-rale text-white z-40 w-full h-16 lg:h-20">
-    <div class="w-full mx-2 lg:w-11/12 lg:mx-auto flex justify-between">
+    <div class="mx-1 lg:w-11/12 lg:mx-auto flex justify-between">
       <div class="mt-2">
         <RouterLink to="/">
           <img src="/logo.png" alt="logo" class="h-10 lg:h-14" />
