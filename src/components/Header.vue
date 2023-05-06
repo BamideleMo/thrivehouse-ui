@@ -38,7 +38,11 @@ const showMenu = ref(false);
     <div class="w-60 bg-green-700 border-l border-black">
       <h2 class="bg-white py-1 text-right">
         <svg
-          @click="() => (showMenu = false)"
+          @click="
+            () => {
+              showMenu = false;
+            }
+          "
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"

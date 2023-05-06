@@ -13,7 +13,9 @@ const media = ref(false);
         <RouterLink class="hover:bg-green-900 p-2" to="/">Home</RouterLink>
       </li>
       <li>
-        <RouterLink class="hover:bg-green-900 p-2" to="/">About us</RouterLink>
+        <RouterLink class="hover:bg-green-900 p-2" to="/about"
+          >About us</RouterLink
+        >
       </li>
       <li>
         <span
