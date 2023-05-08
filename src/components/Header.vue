@@ -3,6 +3,10 @@ import { ref } from "vue";
 import MenuItems from "./MenuItems.vue";
 
 const showMenu = ref(false);
+
+const toggleShowMenu = () => {
+  showMenu.value = !showMenu.value;
+};
 </script>
 <template>
   <div
@@ -13,11 +17,7 @@ const showMenu = ref(false);
     <div class="w-60 bg-green-700 border-l border-black">
       <h2 class="bg-white py-1 text-right">
         <svg
-          @click="
-            () => {
-              showMenu = false;
-            }
-          "
+          @click="toggleShowMenu"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -32,7 +32,7 @@ const showMenu = ref(false);
           />
         </svg>
       </h2>
-      <MenuItems />
+      <MenuItems @toggle-show-menu="toggleShowMenu" />
     </div>
   </div>
   <header class="font-rale text-white z-40 w-full h-16 lg:h-20">
@@ -44,11 +44,7 @@ const showMenu = ref(false);
       </div>
       <MenuItems class="hidden lg:flex" />
       <svg
-        @click="
-          () => {
-            showMenu = true;
-          }
-        "
+        @click="toggleShowMenu"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
