@@ -43,7 +43,7 @@ const media = ref(false);
               <li>
                 <RouterLink
                   @click="$emit('toggleShowMenu')"
-                  to="/"
+                  to="/our-services/leadership"
                   class="hover:underline"
                   >Leadership</RouterLink
                 >
@@ -51,7 +51,7 @@ const media = ref(false);
               <li>
                 <RouterLink
                   @click="$emit('toggleShowMenu')"
-                  to="/"
+                  to="/our-services/authorship"
                   class="hover:underline"
                   >Authorship</RouterLink
                 >
@@ -59,7 +59,7 @@ const media = ref(false);
               <li>
                 <RouterLink
                   @click="$emit('toggleShowMenu')"
-                  to="/"
+                  to="/our-services/relationship"
                   class="hover:underline"
                   >Relationship</RouterLink
                 >
@@ -67,7 +67,7 @@ const media = ref(false);
               <li>
                 <RouterLink
                   @click="$emit('toggleShowMenu')"
-                  to="/"
+                  to="/our-services/fitness-ship"
                   class="hover:underline"
                   >Fitness-ship</RouterLink
                 >
@@ -77,7 +77,7 @@ const media = ref(false);
           <li class="border-t pt-2 border-green-600">
             <RouterLink
               @click="$emit('toggleShowMenu')"
-              to="/"
+              to="/our-services/services"
               class="hover:underline"
               >Services</RouterLink
             >
