@@ -6,6 +6,7 @@ import AuthorshipView from "../views/our-services/AuthorshipView.vue";
 import RelationshipView from "../views/our-services/RelationshipView.vue";
 import FitnessshipView from "../views/our-services/FitnessshipView.vue";
 import ServicesView from "../views/our-services/ServicesView.vue";
+import MediaView from "../views/MediaView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,11 @@ const router = createRouter({
       path: "/our-services/services",
       name: "services",
       component: ServicesView,
+    },
+    {
+      path: "/media/blog",
+      name: "blog",
+      component: MediaView,
     },
   ],
 });

@@ -99,7 +99,7 @@ const media = ref(false);
           <li class="border-b pb-2 border-green-600">
             <RouterLink
               @click="$emit('toggleShowMenu')"
-              to="/"
+              to="/media/blog"
               class="hover:underline"
               >Blog</RouterLink
             >
