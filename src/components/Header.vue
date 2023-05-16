@@ -3,12 +3,25 @@ import { ref } from "vue";
 import MenuItems from "./MenuItems.vue";
 
 const showMenu = ref(false);
+const showDonate = ref(false);
 
 const toggleShowMenu = () => {
   showMenu.value = !showMenu.value;
 };
+
+const doShowDonate = () => {
+  showDonate.value = !showDonate.value;
+};
+
+console.log(showDonate.value);
 </script>
 <template>
+  <div
+    v-if="showDonate"
+    class="bg-black bg-opacity-95 top-0 fixed min-h-screen z-50 w-full flex"
+  >
+    xxxx
+  </div>
   <div
     v-if="showMenu"
     class="bg-black bg-opacity-95 top-0 fixed min-h-screen z-50 w-full flex"
@@ -32,17 +45,20 @@ const toggleShowMenu = () => {
           />
         </svg>
       </h2>
-      <MenuItems @toggle-show-menu="toggleShowMenu" />
+      <MenuItems
+        @toggle-show-menu="toggleShowMenu"
+        @do-show-donate="doShowDonate"
+      />
     </div>
   </div>
-  <header class="font-rale text-white z-40 w-full h-16 lg:h-20">
-    <div class="mx-1 lg:w-11/12 lg:mx-auto flex justify-between">
-      <div class="mt-2 ml-2 lg:ml-0">
+  <header class="font-rale text-white z-40 w-full h-16 sm:h-20">
+    <div class="mx-1 sm:w-11/12 sm:mx-auto flex justify-between">
+      <div class="mt-2 ml-2 sm:ml-0">
         <RouterLink to="/">
-          <img src="/logo.png" alt="logo" class="h-10 lg:h-14" />
+          <img src="/logo.png" alt="logo" class="h-10 sm:h-14" />
         </RouterLink>
       </div>
-      <MenuItems class="hidden lg:flex" />
+      <MenuItems class="hidden sm:flex" />
       <svg
         @click="toggleShowMenu"
         xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +66,7 @@ const toggleShowMenu = () => {
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="lg:hidden w-10 h-10 mt-2 mr-2 cursor-pointer"
+        class="sm:hidden w-10 h-10 mt-2 mr-2 cursor-pointer"
       >
         <path
           stroke-linecap="round"

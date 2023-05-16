@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-const emit = defineEmits(["toggleShowMenu"]);
+const emit = defineEmits(["toggleShowMenu", "doShowDonate"]);
 
 const services = ref(false);
 const media = ref(false);
@@ -107,7 +107,7 @@ const media = ref(false);
           <li class="border-b pb-2 border-green-600">
             <RouterLink
               @click="$emit('toggleShowMenu')"
-              to="/"
+              to="/media/gallery-and-audio"
               class="hover:underline"
               >Gallery & Audio</RouterLink
             >
@@ -115,7 +115,7 @@ const media = ref(false);
           <li class="">
             <RouterLink
               @click="$emit('toggleShowMenu')"
-              to="/"
+              to="/media/events"
               class="hover:underline"
               >Events</RouterLink
             >
@@ -126,16 +126,15 @@ const media = ref(false);
         <RouterLink
           @click="$emit('toggleShowMenu')"
           class="hover:bg-green-900 p-2"
-          to="/"
+          to="/shop"
           >Shop</RouterLink
         >
       </li>
       <li>
-        <RouterLink
-          @click="$emit('toggleShowMenu')"
-          class="hover:bg-green-900 p-2"
-          to="/"
-          >Donate</RouterLink
+        <span
+          @click="$emit('doShowDonate')"
+          class="cursor-pointer hover:bg-green-900 p-2"
+          >Donate</span
         >
       </li>
     </ul>
